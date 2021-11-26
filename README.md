@@ -20,10 +20,10 @@ In order for the script to work make sure that the following lines from /etc/pac
 You can also uncomment these lines for faster downloads as well as color support within pacman:
 
 
-`ParallelDownloads = 5
+`ParallelDownloads = 5`
 
 
-Color`
+`Color`
 
 
 You don't need to run `pacman -Syu` as the script will run it before installing anything.

@@ -54,7 +54,7 @@ usermod -aG wheel,audio,video,optical,storage doc10
 echo "Creating swapfile"
 #You can change the swap file to as much as needed
 #For systems with less ram,make the swapfile big(2048M or similar)
-fallocate -l 1024M /swapfile
+fallocate -l 2048M /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile

@@ -12,9 +12,19 @@ In order for the script to work make sure that the following lines from /etc/pac
 
 
 `[multilib]`
+
+
 `Include = /etc/pacman.d/mirrorlist`
+
+
 You can also uncomment these lines for faster downloads as well as color support within pacman:
+
+
 `ParallelDownloads = 5
+
+
 Color`
+
+
 You don't need to run `pacman -Syu` as the script will run it before installing anything.
 For boot loader there is a section for `MBR`.If your system uses that instead of `UEFI` comment the lines after #uefi untill #mbr and uncomment the lines after #mbr.

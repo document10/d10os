@@ -14,6 +14,7 @@ cat /etc/hosts
 echo "Root password:"
 passwd
 echo "Installing base packages"
+pacman -Syu
 pacman -Syu --noconfirm linux-firmware git neofetch nano grub efibootmgr networkmanager network-manager-applet reflector base-devel linux-headers ipset os-prober ntfs-3g terminus-font openssh bash-completion dnsutils ufw iptables micro exa
 clear
 echo " The following section will allow you to select your gpu driver."
@@ -67,7 +68,7 @@ echo "Swapfile settings"
 cat /etc/sysctl.d/99.sysctl.conf
 free -m
 echo "Installing openbox"
-pacman --noconfirm -S xorg xorg-server xterm firefox lightdm  lightdm-gtk-greeter lightdm-gtk-greeter-settings archlinux-wallpaper pcmanfm avahi xdg-user-dirs xdg-utils gedit bluez bluez-utils alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack sof-firmware blueman arc-solid-gtk-theme arc-gtk-theme arc-icon-theme openbox obconf tint2 picom lxappearance xarchiver unzip gzip lzip menumaker volumeicon mousepad xfce4-terminal cups
+pacman --noconfirm -Syu xorg xorg-server xterm firefox lightdm  lightdm-gtk-greeter lightdm-gtk-greeter-settings archlinux-wallpaper pcmanfm avahi xdg-user-dirs xdg-utils gedit bluez bluez-utils alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack sof-firmware blueman arc-solid-gtk-theme arc-gtk-theme arc-icon-theme openbox obconf tint2 picom lxappearance xarchiver unzip gzip lzip menumaker volumeicon mousepad xfce4-terminal cups
 systemctl enable lightdm
 systemctl enable bluetooth
 systemctl enable cups.service

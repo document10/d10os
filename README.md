@@ -6,6 +6,7 @@ The menu on openbox is configured using menumaker to ensure that you have access
 #  Prerequisites
 ## All distros/OSes
 The region is defaulted to mine but you will need to change it.Also for some OSes you will need to change the username to your nonroot username.
+This script MUST be run as root
 ## Arch linux:
 This script assumes you know to install arch up to the chroot(partitioning and base packages).The rest is handled by the script.
 In order for the script to work make sure that the following lines from /etc/pacman.conf:
